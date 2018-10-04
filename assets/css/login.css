@@ -1,0 +1,222 @@
+body{
+    background-image:url(../imgs/fondoLogin.jpg);
+    background-attachment: fixed;
+    background-color: #fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Parrafos" !important;
+}
+
+.tittles{
+    font-family: "Titulos" !important;
+    font-size: 35px;
+}
+
+.subtittles{
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 20px;
+}
+
+.text{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.textR{
+    padding-left: 10px;
+    float: left;
+    font-size: 20px;
+    color: transparent;
+}
+
+.textRe{
+    font-size: 14px !important;
+    background-color: transparent;
+}
+.login-container{
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: hsla(121, 33%, 35%, 0.75);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.registro-container{
+    color: #ffffff;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+    border-radius: 15px;
+    background-color: hsla(121, 33%, 35%, 0.75);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: auto;
+    width: auto;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.pie-container{
+    font-size: 16px;
+    color: #fff;
+    padding: 5px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+    background-color: hsla(121, 33%, 35%, 0.75);
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.group-material{
+    margin-bottom:10px;
+}
+
+.group-material-login{
+    position:relative;
+    margin-bottom:20px;
+}
+
+.group-material-login label{
+    color:#fff;
+    font-size:15px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:all 0.2s ease;
+    -moz-transition:all 0.2s ease;
+    -webkit-transition:all 0.2s ease;
+}
+
+.material-login-control,
+.material-control-login{
+    background-color: transparent;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:100%;
+    border:none;
+    border-bottom:1px solid #fff;
+    outline:none;
+}
+.material-login-control:focus{ outline:none; }
+
+/* Estado activo del Label*/
+input.material-login-control:focus:valid ~ label,
+input.material-login-control:valid ~ label{
+    top:-18px;
+    font-size:17px;
+    color:#fff;
+}
+
+input.material-login-control:focus:invalid:required,
+input.material-login-control:invalid:required{
+    outline: none;
+    box-shadow: none;
+}
+
+input.material-control,
+select.material-control{
+    border-bottom:1px solid #fff !important;
+    line-height: initial;
+}
+
+/* Estado activo */
+input.material-control:focus ~ label,
+input.material-control:valid ~ label{
+    color:#fff !important;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.btn-login{
+    background-color: transparent;
+    float : right;
+    font-size: 25px;
+    color: #fff;
+    padding-right: 10px;
+    margin:0 auto;
+    border: none;
+}
+
+.btn-login:hover{
+    background-color: hsla(121, 33%, 35%, 0.8);
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+}
+.btn-login:focus,
+.btn-login:active{
+    outline: none;
+    box-shadow: none;
+}
+
+/*=======================================================================================================
+=                                              Font                                                     =
+========================================================================================================*/
+@font-face{
+    font-family: "Titulos";
+    src: url("../fonts/AlegreyaSansSC-Regular.ttf"), url("../fonts/AlegreyaSansSC-Regular.eot"), url("../fonts/AlegreyaSansSC-Regular.woff"), url("../fonts/AlegreyaSansSC-Regular.woff2"), url("../fonts/AlegreyaSansSC-Regular.svg");
+}
+
+@font-face{
+    font-family: "subTitulos";
+    src: url("../fonts/AlegreyaSansSC-Regular.ttf"), url("../fonts/AlegreyaSansSC-Regular.eot"), url("../fonts/AlegreyaSansSC-Regular.woff"), url("../fonts/AlegreyaSansSC-Regular.woff2"), url("../fonts/AlegreyaSansSC-Regular.svg");
+}
+
+@font-face{
+    font-family: "Parrafos";
+    src: url("../fonts/OpenSans-CondLight.ttf"), url("../fonts/OpenSans-CondLight.eot"), url("../fonts/OpenSans-CondLight.woff"), url("../fonts/OpenSans-CondLight.woff2"), url("../fonts/OpenSans-CondLight.svg");
+}
+
+/*=======================================================================================================
+=                                        Media query                                                  =
+========================================================================================================*/
+/* col-xs */
+@media (max-width: 767px) {
+    .login-container{ width: 97%; max-width: 300px;}
+    .pie-container{ width: 97%; max-width: 260px;}
+    form.form_SRCB{ padding: 7px;}
+    .table-responsive {
+        margin-bottom: 0 !important;
+        border: none !important;
+    }
+}
+
+/* col-sm */
+@media (min-width: 768px) and (max-width: 991px) {
+    .login-container{ width: 340px; }
+    .pie-container{ width: 260px;}
+}
+
+/* col-md */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .login-container{ width: 350px; }
+    .pie-container{ width: 260px;}
+}
+
+/* col-lg */
+@media (min-width: 1200px) {
+    .login-container{ width: 360px; }
+    .pie-container{ width: 260px;}
+}
